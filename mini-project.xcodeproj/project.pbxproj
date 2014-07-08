@@ -32,6 +32,7 @@
 		14109E04196C66A200F12AC5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E03196C66A200F12AC5 /* MobileCoreServices.framework */; };
 		14109E06196C66A900F12AC5 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E05196C66A900F12AC5 /* libz.1.1.3.dylib */; };
 		14109E08196C66B200F12AC5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E07196C66B200F12AC5 /* libsqlite3.dylib */; };
+		14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0A196C758E00F12AC5 /* RestaurantStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		14109E03196C66A200F12AC5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		14109E05196C66A900F12AC5 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		14109E07196C66B200F12AC5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		14109E09196C758E00F12AC5 /* RestaurantStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantStore.h; sourceTree = "<group>"; };
+		14109E0A196C758E00F12AC5 /* RestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				14109DF3196C63C000F12AC5 /* Restaurant.m */,
+				14109E09196C758E00F12AC5 /* RestaurantStore.h */,
+				14109E0A196C758E00F12AC5 /* RestaurantStore.m */,
 				14109DF2196C63C000F12AC5 /* Restaurant.h */,
 			);
 			name = Restaurant;
@@ -313,6 +318,7 @@
 			files = (
 				14109DD1196C5CE500F12AC5 /* ViewController.m in Sources */,
 				14109DF4196C63C000F12AC5 /* Restaurant.m in Sources */,
+				14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */,
 				14109DF1196C638600F12AC5 /* WhatsOpenTableViewController.m in Sources */,
 				14109DCB196C5CE500F12AC5 /* AppDelegate.m in Sources */,
 				14109DC7196C5CE500F12AC5 /* main.m in Sources */,

@@ -6,66 +6,61 @@
 //  Copyright (c) 2014 Mengdi Lin. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "WhatsOpenTableViewController.h"
 #import "Restaurant.h"
+#import "RestaurantStore.h"
 @interface WhatsOpenTableViewController ()
 
 @end
 
 @implementation WhatsOpenTableViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+    NSString *className;
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Custom initialization
+        className=@"Restaurant";
+        self.pullToRefreshEnabled=YES;
+        self.paginationEnabled=NO;
+        self.objectsPerPage=25;
+        
     }
     return self;
 }
 
-- (void)viewDidLoad
+
+-(PFQuery *)queryForTable
 {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    PFQuery *query = [PFQuery queryWithClassName:className];
+    if([self.objects count] == 0)
+    {
+        query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    }
+    [query orderByDescending:@"createdAt"];
+    return query;
 }
 
-- (void)didReceiveMemoryWarning
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+        NSLog(@"%@",object);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WhatsOpen"];
+    if(cell==nil)
+    {
+        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"WhatsOpen"];
+    }
     
-    // Configure the cell...
-    
+    cell.textLabel.text=object[@"Name"];
     return cell;
 }
-*/
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
 
 /*
 // Override to support conditional editing of the table view.
