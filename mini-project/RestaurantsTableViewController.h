@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WhatsOpenTableViewController : PFQueryTableViewController
+@interface RestaurantsTableViewController : PFQueryTableViewController
 
 @end

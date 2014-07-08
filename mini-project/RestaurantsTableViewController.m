@@ -7,14 +7,14 @@
 //
 
 #import <Parse/Parse.h>
-#import "WhatsOpenTableViewController.h"
+#import "RestaurantsTableViewController.h"
 #import "Restaurant.h"
 #import "RestaurantStore.h"
-@interface WhatsOpenTableViewController ()
+@interface RestaurantsTableViewController ()
 
 @end
 
-@implementation WhatsOpenTableViewController
+@implementation RestaurantsTableViewController
 {
     NSString *className;
 }
