@@ -11,4 +11,5 @@
 @interface Restaurant : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *location;
+
 @end

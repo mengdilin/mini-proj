@@ -7,7 +7,7 @@
 //
 
 #import "WhatsOpenTableViewController.h"
-
+#import "Restaurant.h"
 @interface WhatsOpenTableViewController ()
 
 @end
