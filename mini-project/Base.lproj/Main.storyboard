@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLy-XT-46b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="106"/>
+            <point key="canvasLocation" x="192" y="120"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CBP-OX-IiP">
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ja6-Tt-lkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="97"/>
+            <point key="canvasLocation" x="670" y="152"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="K6G-M2-H94">
@@ -139,7 +139,7 @@
             <objects>
                 <tabBarController definesPresentationContext="YES" id="IVS-ka-BYn" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Xzx-rI-B2h"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3Ns-O8-HEu">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

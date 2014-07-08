@@ -21,6 +21,8 @@
 		14109DDC196C5CE500F12AC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DBE196C5CE500F12AC5 /* UIKit.framework */; };
 		14109DE4196C5CE600F12AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14109DE2196C5CE500F12AC5 /* InfoPlist.strings */; };
 		14109DE6196C5CE600F12AC5 /* mini_projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DE5196C5CE600F12AC5 /* mini_projectTests.m */; };
+		14109DF1196C638600F12AC5 /* WhatsOpenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DF0196C638600F12AC5 /* WhatsOpenTableViewController.m */; };
+		14109DF4196C63C000F12AC5 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DF3196C63C000F12AC5 /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		14109DE1196C5CE500F12AC5 /* mini-projectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mini-projectTests-Info.plist"; sourceTree = "<group>"; };
 		14109DE3196C5CE500F12AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14109DE5196C5CE600F12AC5 /* mini_projectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mini_projectTests.m; sourceTree = "<group>"; };
+		14109DEF196C638600F12AC5 /* WhatsOpenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsOpenTableViewController.h; sourceTree = "<group>"; };
+		14109DF0196C638600F12AC5 /* WhatsOpenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsOpenTableViewController.m; sourceTree = "<group>"; };
+		14109DF2196C63C000F12AC5 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		14109DF3196C63C000F12AC5 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 				14109DC9196C5CE500F12AC5 /* AppDelegate.h */,
 				14109DCA196C5CE500F12AC5 /* AppDelegate.m */,
 				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
+				14109DF6196C640E00F12AC5 /* WhatsOpen */,
+				14109DF5196C63C800F12AC5 /* Restaurant */,
 				14109DCF196C5CE500F12AC5 /* ViewController.h */,
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
 				14109DD2196C5CE500F12AC5 /* Images.xcassets */,
@@ -150,6 +158,24 @@
 				14109DE2196C5CE500F12AC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14109DF5196C63C800F12AC5 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				14109DF3196C63C000F12AC5 /* Restaurant.m */,
+				14109DF2196C63C000F12AC5 /* Restaurant.h */,
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		14109DF6196C640E00F12AC5 /* WhatsOpen */ = {
+			isa = PBXGroup;
+			children = (
+				14109DF0196C638600F12AC5 /* WhatsOpenTableViewController.m */,
+				14109DEF196C638600F12AC5 /* WhatsOpenTableViewController.h */,
+			);
+			name = WhatsOpen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14109DD1196C5CE500F12AC5 /* ViewController.m in Sources */,
+				14109DF4196C63C000F12AC5 /* Restaurant.m in Sources */,
+				14109DF1196C638600F12AC5 /* WhatsOpenTableViewController.m in Sources */,
 				14109DCB196C5CE500F12AC5 /* AppDelegate.m in Sources */,
 				14109DC7196C5CE500F12AC5 /* main.m in Sources */,
 			);
