@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [Parse setApplicationId:@"3PU1OmJ9wIjdgL1PZX25J19JioUcNYv8g1jaPBdw"
+                  clientKey:@"CqdhFnFFpM39GZ16PIxawN0C6oY7KXtW5IW4aQiE"];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Restaurant"];
+    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved %d objects", count);
+        } else {
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            NSLog(@"Error: %@", errorString);
+        }
+    }];
     return YES;
 }
 							
