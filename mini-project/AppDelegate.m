@@ -11,7 +11,6 @@
 #import <Parse/Parse.h>
 
 #import "Restaurant.h"
->>>>>>> d242699caaf3259316e4f79920f1a79a0d74a8a1
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
