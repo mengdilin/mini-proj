@@ -6,15 +6,43 @@
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+#import "Restaurant.h"
+>>>>>>> d242699caaf3259316e4f79920f1a79a0d74a8a1
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch
     
+    // Override point for customization after application launch.
+        [Parse setApplicationId:@"3PU1OmJ9wIjdgL1PZX25J19JioUcNYv8g1jaPBdw" clientKey:@"CqdhFnFFpM39GZ16PIxawN0C6oY7KXtW5IW4aQiE"];
+    Restaurant *res = [[Restaurant alloc] init];
+    
+    
+/**
+    res.name=@"Noodle Bar";
+    res.location=@"MPK Building 10";
+    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    [restaurant setObject:res.name forKey:@"Name"];
+    [restaurant setObject:res.location forKey:@"Location"];
+    
+    [restaurant saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if(succeeded)
+        {
+            NSLog(@"object uploaded");
+        }
+        else
+        {
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            NSLog(@"Error %@",errorString);
+        }
+    }];
+ **/
+ 
     return YES;
 }
 							
