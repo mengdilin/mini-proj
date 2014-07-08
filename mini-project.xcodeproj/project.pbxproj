@@ -21,6 +21,10 @@
 		14109DDC196C5CE500F12AC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DBE196C5CE500F12AC5 /* UIKit.framework */; };
 		14109DE4196C5CE600F12AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14109DE2196C5CE500F12AC5 /* InfoPlist.strings */; };
 		14109DE6196C5CE600F12AC5 /* mini_projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DE5196C5CE600F12AC5 /* mini_projectTests.m */; };
+		3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */; };
+		3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC09196CA13600855253 /* AddTabBarController.m */; };
+		3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */; };
+		3ACCDC0F196CA9AE00855253 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACCDC0E196CA9AE00855253 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		14109DE1196C5CE500F12AC5 /* mini-projectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mini-projectTests-Info.plist"; sourceTree = "<group>"; };
 		14109DE3196C5CE500F12AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14109DE5196C5CE600F12AC5 /* mini_projectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mini_projectTests.m; sourceTree = "<group>"; };
+		3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRestaurantViewController.h; sourceTree = "<group>"; };
+		3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRestaurantViewController.m; sourceTree = "<group>"; };
+		3ACCDC08196CA13600855253 /* AddTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTabBarController.h; sourceTree = "<group>"; };
+		3ACCDC09196CA13600855253 /* AddTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTabBarController.m; sourceTree = "<group>"; };
+		3ACCDC0B196CA3AA00855253 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		3ACCDC0E196CA9AE00855253 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 			files = (
 				14109DBD196C5CE500F12AC5 /* CoreGraphics.framework in Frameworks */,
 				14109DBF196C5CE500F12AC5 /* UIKit.framework in Frameworks */,
+				3ACCDC0F196CA9AE00855253 /* Parse.framework in Frameworks */,
 				14109DBB196C5CE500F12AC5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +94,7 @@
 		14109DAE196C5CE500F12AC5 = {
 			isa = PBXGroup;
 			children = (
+				3ACCDC0E196CA9AE00855253 /* Parse.framework */,
 				14109DC0196C5CE500F12AC5 /* mini-project */,
 				14109DDF196C5CE500F12AC5 /* mini-projectTests */,
 				14109DB9196C5CE500F12AC5 /* Frameworks */,
@@ -115,6 +128,12 @@
 				14109DC9196C5CE500F12AC5 /* AppDelegate.h */,
 				14109DCA196C5CE500F12AC5 /* AppDelegate.m */,
 				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
+				3ACCDC0B196CA3AA00855253 /* SubmitViewController.h */,
+				3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */,
+				3ACCDC08196CA13600855253 /* AddTabBarController.h */,
+				3ACCDC09196CA13600855253 /* AddTabBarController.m */,
+				3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */,
+				3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */,
 				14109DCF196C5CE500F12AC5 /* ViewController.h */,
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
 				14109DD2196C5CE500F12AC5 /* Images.xcassets */,
@@ -250,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14109DD1196C5CE500F12AC5 /* ViewController.m in Sources */,
+				3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */,
 				14109DCB196C5CE500F12AC5 /* AppDelegate.m in Sources */,
 				14109DC7196C5CE500F12AC5 /* main.m in Sources */,
+				3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */,
+				3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mini-project/mini-project-Prefix.pch";
 				INFOPLIST_FILE = "mini-project/mini-project-Info.plist";
@@ -389,6 +415,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mini-project/mini-project-Prefix.pch";
 				INFOPLIST_FILE = "mini-project/mini-project-Info.plist";
@@ -456,6 +486,7 @@
 				14109DEB196C5CE600F12AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14109DEC196C5CE600F12AC5 /* Build configuration list for PBXNativeTarget "mini-projectTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +495,7 @@
 				14109DEE196C5CE600F12AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
