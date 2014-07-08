@@ -7,6 +7,7 @@
 //
 
 #import "AddRestaurantViewController.h"
+#import <Parse/Parse.h>
 
 @interface AddRestaurantViewController ()
 
@@ -36,7 +37,7 @@
     // Do any additional setup after loading the view.
     self.datePickerClose.datePickerMode = UIDatePickerModeTime;
     self.datePickerOpen.datePickerMode = UIDatePickerModeTime;
-    [self.navigationItem setHidesBackButton:YES animated:YES];
+    //[self.navigationItem setHidesBackButton:YES animated:YES];
 
 }
 
@@ -51,6 +52,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    restaurant[@"Name"] = @"Sean Plott";
+    [restaurant saveInBackground];
 }
 
 /*

@@ -7,6 +7,7 @@
 //
 
 #import "AddTabBarController.h"
+#import <Parse/Parse.h>
 
 @interface AddTabBarController ()
 
@@ -34,6 +35,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    restaurant[@"Name"] = @"Sean Plott";
+    [restaurant saveInBackground];
+    NSLog(@"SPOT7");
 }
 
 /*
