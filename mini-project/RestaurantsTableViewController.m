@@ -10,6 +10,7 @@
 #import "RestaurantsTableViewController.h"
 #import "Restaurant.h"
 #import "RestaurantStore.h"
+#import "RestaurantDetailViewController.h"
 @interface RestaurantsTableViewController ()
 
 @end
@@ -54,7 +55,14 @@
     
     cell.textLabel.text=object[@"Name"];
     cell.detailTextLabel.text=object[@"Location"];
+    cell.tag = indexPath.row;
     return cell;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"RestaurantsToRestaurantDetail" sender:[tableView cellForRowAtIndexPath:indexPath]];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -62,6 +70,19 @@
     return 1;
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"RestaurantsToRestaurantDetail"])
+    {
+        RestaurantDetailViewController *controller = (RestaurantDetailViewController *)segue.destinationViewController;
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        controller.name = cell.textLabel.text;
+        //controller.hours=@"";
+        controller.location=cell.detailTextLabel.text;
+        
+    }
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

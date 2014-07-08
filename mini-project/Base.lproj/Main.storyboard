@@ -179,15 +179,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="541-gc-Ckr">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="541-gc-Ckr">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="541-gc-Ckr" id="6do-Gw-XJh">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hQC-yd-KGu" kind="modal" id="pm1-S9-Tst"/>
+                                    <segue destination="hQC-yd-KGu" kind="push" identifier="RestaurantsToRestaurantDetail" id="JFB-st-2JS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="1483" y="778"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Detail View Controller-->
         <scene sceneID="QAe-pB-TUO">
             <objects>
-                <viewController id="hQC-yd-KGu" sceneMemberID="viewController">
+                <viewController id="hQC-yd-KGu" customClass="RestaurantDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nrW-jD-ccT"/>
                         <viewControllerLayoutGuide type="bottom" id="hO3-vp-TpI"/>
@@ -236,6 +236,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NSu-8L-gSR"/>
+                    <connections>
+                        <outlet property="hoursLabel" destination="mXj-a0-bIu" id="s1J-Jd-7lN"/>
+                        <outlet property="locationLabel" destination="524-nv-x2V" id="pzH-1w-GJB"/>
+                        <outlet property="nameLabel" destination="gqX-eK-d2o" id="OJm-JC-sfF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFW-hf-8AX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
