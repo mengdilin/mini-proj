@@ -46,14 +46,14 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
-        NSLog(@"%@",object);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WhatsOpen"];
     if(cell==nil)
     {
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"WhatsOpen"];
+        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"WhatsOpen"];
     }
     
     cell.textLabel.text=object[@"Name"];
+    cell.detailTextLabel.text=object[@"Location"];
     return cell;
 }
 

@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="670" y="152"/>
         </scene>
-        <!--Whats Open Table View Controller-->
+        <!--Whats Open Table View Controller - What's Open Now-->
         <scene sceneID="K6G-M2-H94">
             <objects>
                 <tableViewController id="j7o-Qf-uoI" customClass="WhatsOpenTableViewController" sceneMemberID="viewController">
@@ -79,12 +79,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WhatsOpen" id="gZ8-lm-fD4">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WhatsOpen" textLabel="elC-EQ-dko" detailTextLabel="UOI-jd-0nf" style="IBUITableViewCellStyleSubtitle" id="gZ8-lm-fD4">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gZ8-lm-fD4" id="tNq-IS-vDu">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="elC-EQ-dko">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UOI-jd-0nf">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -93,7 +109,7 @@
                             <outlet property="delegate" destination="j7o-Qf-uoI" id="oWG-el-mBJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="OOU-he-mXk"/>
+                    <navigationItem key="navigationItem" title="What's Open Now" id="OOU-he-mXk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaE-Gt-wzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
