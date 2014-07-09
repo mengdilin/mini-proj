@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface AddTabBarController : UITabBarController
+
+@property (nonatomic) PFObject *restaurant;
 
 @end

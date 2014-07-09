@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface AddRestaurantViewController : UIViewController
+
+@property (nonatomic) PFObject *restaurant;
+
+-(double)openTime;
+-(double)closeTime;
 
 @end

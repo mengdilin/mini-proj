@@ -13,8 +13,7 @@
 
 @property (weak,nonatomic) IBOutlet UIDatePicker *datePickerOpen;
 @property (weak,nonatomic) IBOutlet UIDatePicker *datePickerClose;
-@property (nonatomic) int secondsSinceMidnightOpen;
-@property (nonatomic) int secondsSinceMidnightClose;
+
 
 
 @end
@@ -41,12 +40,29 @@
 
 }
 
--(IBAction)dismiss:(id)sender
+-(double)openTime
 {
-    NSLog(@"SPOT5");
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
-    NSLog(@"SPOT6");
+    double time = self.datePickerOpen.date.timeIntervalSince1970;
+    while(time>86400)
+    {
+        time = time-86400;
+    }
+    
+    return time;
 }
+
+-(double)closeTime
+{
+    double time = self.datePickerClose.date.timeIntervalSince1970;
+    while(time>86400)
+    {
+        time = time-86400;
+    }
+    
+    return time;
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -56,9 +72,21 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    //PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
-    //restaurant[@"Name"] = @"Sean Plott";
-    //[restaurant saveInBackground];
+    [self.datePickerOpen setDate:date animated:TRUE];
+
+}
+
+-(IBAction)endPressed:(id)sender
+{
+    NSDate * now = [[NSDate alloc] init];
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents * comps = [cal components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
+    [comps setHour:23];
+    [comps setMinute:59];
+    [comps setSecond:59];
+    NSDate * date = [cal dateFromComponents:comps];
+    [self.datePicker setDate:date animated:TRUE];
+>>>>>>> 2c7077c393b47a5260bc22f1f9ddbf2fea1a34ab
 }
 
 /*
