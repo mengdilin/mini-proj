@@ -72,7 +72,7 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.datePickerOpen setDate:date animated:TRUE];
+ //   [self.datePickerOpen setDate:date animated:TRUE];
 
 }
 
@@ -85,8 +85,7 @@
     [comps setMinute:59];
     [comps setSecond:59];
     NSDate * date = [cal dateFromComponents:comps];
-    [self.datePicker setDate:date animated:TRUE];
->>>>>>> 2c7077c393b47a5260bc22f1f9ddbf2fea1a34ab
+ //   [self.datePicker setDate:date animated:TRUE];
 }
 
 /*
