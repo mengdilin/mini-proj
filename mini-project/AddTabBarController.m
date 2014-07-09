@@ -8,12 +8,19 @@
 
 #import "AddTabBarController.h"
 #import <Parse/Parse.h>
+#import "AddRestaurantViewController.h"
+
+@class AddRestaurantViewController;
+@class SubmitViewController;
 
 @interface AddTabBarController ()
+
 
 @end
 
 @implementation AddTabBarController
+
+static PFObject *restaurant;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,10 +31,12 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    restaurant = [PFObject objectWithClassName:@"Restaurant"];
     
 }
 
@@ -38,10 +47,18 @@
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
-    restaurant[@"Name"] = @"Sean Plott";
-    [restaurant saveInBackground];
-    NSLog(@"SPOT7");
+    /*PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    restaurant[@"Name"] = @"Dennys";
+    restaurant[@"ClosingTimes"] = [NSArray arrayWithObjects: @82800, @82800, @82800, @79200,@79200,@79200,@79200, nil];
+    restaurant[@"OpeningTimes"] = [NSArray arrayWithObjects: @21600, @21600, @21600, @21600,@21600,@21600,@21600, nil];
+    
+    [restaurant saveInBackground];*/
+    
+    AddRestaurantViewController *mon = [self.storyboard instantiateViewControllerWithIdentifier:@"mon"];
+    double monopen;
+    monopen = mon.openTime;
+    NSLog(@"%f",monopen);
+
 }
 
 /*

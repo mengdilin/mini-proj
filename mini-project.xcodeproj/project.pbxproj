@@ -34,6 +34,7 @@
 		14109E08196C66B200F12AC5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E07196C66B200F12AC5 /* libsqlite3.dylib */; };
 		14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0A196C758E00F12AC5 /* RestaurantStore.m */; };
 		14109E0E196C9E4200F12AC5 /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */; };
+		3A7ADB69196D9CA600AA5B36 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */; };
 		3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */; };
 		3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC09196CA13600855253 /* AddTabBarController.m */; };
 		3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */; };
@@ -87,6 +88,8 @@
 		14109E0A196C758E00F12AC5 /* RestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantStore.m; sourceTree = "<group>"; };
 		14109E0C196C9E4200F12AC5 /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailViewController.h; sourceTree = "<group>"; };
 		14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailViewController.m; sourceTree = "<group>"; };
+		3A7ADB67196D9CA600AA5B36 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRestaurantViewController.h; sourceTree = "<group>"; };
 		3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRestaurantViewController.m; sourceTree = "<group>"; };
 		3ACCDC08196CA13600855253 /* AddTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTabBarController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */,
 				14109DCF196C5CE500F12AC5 /* ViewController.h */,
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
+				3A7ADB67196D9CA600AA5B36 /* WelcomeViewController.h */,
+				3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */,
 				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
 				14109DF6196C640E00F12AC5 /* RestaurantsList */,
 				14109DF5196C63C800F12AC5 /* Restaurant */,
@@ -347,6 +352,7 @@
 				14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */,
 				14109DF1196C638600F12AC5 /* RestaurantsTableViewController.m in Sources */,
 				14109DCB196C5CE500F12AC5 /* AppDelegate.m in Sources */,
+				3A7ADB69196D9CA600AA5B36 /* WelcomeViewController.m in Sources */,
 				14109E0E196C9E4200F12AC5 /* RestaurantDetailViewController.m in Sources */,
 				14109DC7196C5CE500F12AC5 /* main.m in Sources */,
 				3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */,
