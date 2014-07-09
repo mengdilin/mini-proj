@@ -11,9 +11,13 @@
 @interface RestaurantDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hoursLabel;
+@property (weak, nonatomic) IBOutlet UILabel *openingHoursLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *location;
 @property (nonatomic, copy) NSArray *hours;
+@property (nonatomic) int openingMinutesBeforeMidnight;
+@property (nonatomic) int closingMinutesBeforeMidnight;
+
 @end

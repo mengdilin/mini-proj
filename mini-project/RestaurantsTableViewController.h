@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RestaurantsTableViewController : PFQueryTableViewController
+{
+   // UIScrollView *myScrollView;
+}
+
 
 @end

@@ -34,6 +34,12 @@
 }
 
 
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    //[self addScrollView];
+}
 -(PFQuery *)queryForTable
 {
     PFQuery *query = [PFQuery queryWithClassName:className];
@@ -55,7 +61,6 @@
     
     cell.textLabel.text=object[@"Name"];
     cell.detailTextLabel.text=object[@"Location"];
-    cell.tag = indexPath.row;
     return cell;
 }
 
@@ -78,8 +83,11 @@
         RestaurantDetailViewController *controller = (RestaurantDetailViewController *)segue.destinationViewController;
         UITableViewCell *cell = (UITableViewCell *)sender;
         controller.name = cell.textLabel.text;
+        controller.location= cell.detailTextLabel.text;
+
+        
         //controller.hours=@"";
-        controller.location=cell.detailTextLabel.text;
+
         
     }
 }
