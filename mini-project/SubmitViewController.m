@@ -10,7 +10,7 @@
 #import "WelcomeViewController.h"
 
 @interface SubmitViewController ()
-
+@property (weak,nonatomic) IBOutlet UITextField *restaurantName;
 @end
 
 @implementation SubmitViewController
@@ -24,11 +24,14 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.navigationItem setHidesBackButton:NO animated:YES];
+    self.restaurantName.delegate = self;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning

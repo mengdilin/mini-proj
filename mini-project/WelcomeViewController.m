@@ -7,8 +7,9 @@
 //
 
 #import "WelcomeViewController.h"
+#import "AddTabBarController.h"
 
-@interface WelcomeViewController ()
+@interface WelcomeViewController () <AddTabBarViewControllerDelegate>
 
 @end
 
@@ -46,5 +47,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)addTabBarViewController:(AddTabBarController *)controller
+              didSelectOpenDate:(NSDate *)openDate
+                            day:(NSString *)dayAsString
+{
+    NSLog(@"WOOOO open at %@ on %@", openDate, dayAsString);
+}
 
 @end

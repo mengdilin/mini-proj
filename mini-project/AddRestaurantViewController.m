@@ -13,6 +13,8 @@
 
 @property (weak,nonatomic) IBOutlet UIDatePicker *datePickerOpen;
 @property (weak,nonatomic) IBOutlet UIDatePicker *datePickerClose;
+- (IBAction)datePickerValueChanged:(UIDatePicker *)sender;
+
 
 
 
@@ -40,29 +42,6 @@
 
 }
 
--(double)openTime
-{
-    double time = self.datePickerOpen.date.timeIntervalSince1970;
-    while(time>86400)
-    {
-        time = time-86400;
-    }
-    
-    return time;
-}
-
--(double)closeTime
-{
-    double time = self.datePickerClose.date.timeIntervalSince1970;
-    while(time>86400)
-    {
-        time = time-86400;
-    }
-    
-    return time;
-}
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -70,11 +49,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillDisappear:(BOOL)animated
-{
- //   [self.datePickerOpen setDate:date animated:TRUE];
-
-}
 
 -(IBAction)endPressed:(id)sender
 {
@@ -88,6 +62,7 @@
  //   [self.datePicker setDate:date animated:TRUE];
 }
 
+
 /*
 #pragma mark - Navigation
 
@@ -99,4 +74,14 @@
 }
 */
 
+- (IBAction)datePickerValueChanged:(UIDatePicker *)sender {
+    if ([sender isEqual:self.datePickerOpen]) {
+        [self.delegate addViewController:self
+                       didSelectOpenDate:sender.date];
+    } else if ([sender isEqual:self.datePickerClose]) {
+        // nothing yet!
+
+    }
+    
+}
 @end
