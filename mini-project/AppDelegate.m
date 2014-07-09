@@ -8,17 +8,16 @@
 
 #import <Parse/Parse.h>
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
-
 #import "Restaurant.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-        [Parse setApplicationId:@"3PU1OmJ9wIjdgL1PZX25J19JioUcNYv8g1jaPBdw" clientKey:@"CqdhFnFFpM39GZ16PIxawN0C6oY7KXtW5IW4aQiE"];
-    Restaurant *res = [[Restaurant alloc] init];
-
+        [Parse setApplicationId:@"3PU1OmJ9wIjdgL1PZX25J19JioUcNYv8g1jaPBdw"
+                      clientKey:@"CqdhFnFFpM39GZ16PIxawN0C6oY7KXtW5IW4aQiE"];
+    
     return YES;
 }
 							
