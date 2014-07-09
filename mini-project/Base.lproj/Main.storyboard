@@ -116,7 +116,7 @@
         <!--Add Restaurant View Controller - Mon-->
         <scene sceneID="iet-sX-ekW">
             <objects>
-                <viewController storyboardIdentifier="mon" id="uXJ-AI-eWj" customClass="AddRestaurantViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mon" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uXJ-AI-eWj" customClass="AddRestaurantViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zif-Oc-cg4"/>
                         <viewControllerLayoutGuide type="bottom" id="S1B-to-EOd"/>
@@ -140,12 +140,18 @@
                                 <date key="date" timeIntervalSinceReferenceDate="426544212.8373">
                                     <!--2014-07-08 20:30:12 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="uXJ-AI-eWj" eventType="valueChanged" id="cOp-wr-z1J"/>
+                                </connections>
                             </datePicker>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-dH-lTg">
                                 <rect key="frame" x="0.0" y="329" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="426544221.92742097">
                                     <!--2014-07-08 20:30:21 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="uXJ-AI-eWj" eventType="valueChanged" id="5Gx-hA-9g9"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -153,8 +159,8 @@
                     <tabBarItem key="tabBarItem" title="Mon" id="ZAK-G2-JEj"/>
                     <navigationItem key="navigationItem" id="1jk-IP-BAO"/>
                     <connections>
-                        <outlet property="datePickerClose" destination="q1e-dH-lTg" id="RPh-7P-Sf3"/>
-                        <outlet property="datePickerOpen" destination="D9F-xa-xcc" id="9br-y2-7CZ"/>
+                        <outlet property="datePickerClose" destination="q1e-dH-lTg" id="oHj-Gy-bNm"/>
+                        <outlet property="datePickerOpen" destination="D9F-xa-xcc" id="RE6-MT-sMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xq-Y1-dI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -379,6 +385,9 @@
                         <barButtonItem title="Item" id="h5d-wn-xbD"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="restaurantName" destination="vGb-Xa-7zZ" id="S0N-9U-nKh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jg-dU-nZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

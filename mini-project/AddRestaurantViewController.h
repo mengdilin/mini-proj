@@ -9,11 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
+@protocol AddRestaurantViewControllerDelegate;
+
 @interface AddRestaurantViewController : UIViewController
 
 @property (nonatomic) PFObject *restaurant;
 
--(double)openTime;
--(double)closeTime;
+@property (strong, nonatomic) NSDate *openDate;
+@property (strong, nonatomic) NSDate *closeDate;
+@property (weak, nonatomic) IBOutlet id <AddRestaurantViewControllerDelegate> delegate;
+
+@end
+
+@protocol AddRestaurantViewControllerDelegate <NSObject>
+
+- (void)addViewController:(AddRestaurantViewController *)controller
+        didSelectOpenDate:(NSDate *)openDate;
 
 @end

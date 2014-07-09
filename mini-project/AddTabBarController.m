@@ -13,7 +13,7 @@
 @class AddRestaurantViewController;
 @class SubmitViewController;
 
-@interface AddTabBarController ()
+@interface AddTabBarController () <AddRestaurantViewControllerDelegate>
 
 
 @end
@@ -37,6 +37,11 @@ static PFObject *restaurant;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    for (AddRestaurantViewController *tabVC in self.viewControllers) {
+        if ([tabVC isKindOfClass:[AddRestaurantViewController class]]) {
+            tabVC.delegate = self;
+        }
+    }
     
 }
 
@@ -47,19 +52,33 @@ static PFObject *restaurant;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    /*PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
     restaurant[@"Name"] = @"Dennys";
     restaurant[@"ClosingTimes"] = [NSArray arrayWithObjects: @82800, @82800, @82800, @79200,@79200,@79200,@79200, nil];
-    restaurant[@"OpeningTimes"] = [NSArray arrayWithObjects: @21600, @21600, @21600, @21600,@21600,@21600,@21600, nil];
+    restaurant[@"OpeningTimes"] = [NSArray arrayWithObjects: @10800, @10800, @10800, @10800,@10800,@10800,@10800, nil];
     
-    [restaurant saveInBackground];*/
+    [restaurant saveInBackground];
     
     AddRestaurantViewController *mon = [self.storyboard instantiateViewControllerWithIdentifier:@"mon"];
-    double monopen;
-    monopen = mon.openTime;
-    NSLog(@"%f",monopen);
+    
+    
+    double time = mon.openDate.timeIntervalSince1970;
+    while(time>86400)
+    {
+        time = time-86400;
+    }
+    NSLog(@"%f",time);
 
 }
+
+- (void)addViewController:(AddRestaurantViewController *)controller didSelectOpenDate:(NSDate *)openDate
+{
+    [self.addTabBarDelegate addTabBarViewController:self
+                                  didSelectOpenDate:openDate
+                                                day:controller.restorationIdentifier];
+    NSLog(@"date is: %@", openDate);
+}
+
 
 /*
 #pragma mark - Navigation
