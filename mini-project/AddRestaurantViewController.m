@@ -56,9 +56,9 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
-    restaurant[@"Name"] = @"Sean Plott";
-    [restaurant saveInBackground];
+    //PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
+    //restaurant[@"Name"] = @"Sean Plott";
+    //[restaurant saveInBackground];
 }
 
 /*
