@@ -34,6 +34,10 @@
         [logInViewController setSignUpController:signUpViewController];
         [self presentViewController:logInViewController animated:YES completion:NULL];
     }
+    PFUser *user = [PFUser currentUser];
+    NSString *username = [NSString stringWithFormat:@"%@",user.username];
+    self.usernameLabel.text=username;
+    [self.view setNeedsDisplay];
 }
 
 -(BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password
