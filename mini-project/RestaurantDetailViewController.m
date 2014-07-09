@@ -15,6 +15,7 @@
 @implementation RestaurantDetailViewController
 {
     NSString *openingHour, *closingHour;
+    PFObject *currentRestaurant;
 }
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -62,7 +63,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if(!error)
         {
-            NSLog(@"here");
+            //NSLog(@"here");
             for(PFObject *object in objects)
             {
                 if(([object[@"Name"] isEqualToString:self.name]) && ([object[@"Location"] isEqualToString:self.location]))
@@ -70,11 +71,12 @@
             [object fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
                 if(!error)
                 {
+                    currentRestaurant=object;
                     self.openingMinutesBeforeMidnight = [object[@"OpeningTimes"][weekday] intValue];
-                    NSLog(@"here within");
+                    //NSLog(@"here within");
                     self.closingMinutesBeforeMidnight = [object[@"ClosingTimes"][weekday] intValue];
                     int closeHour = self.closingMinutesBeforeMidnight / 60;
-                    NSLog(@"%i",self.closingMinutesBeforeMidnight);
+                    //NSLog(@"%i",self.closingMinutesBeforeMidnight);
                     int closeMin = self.closingMinutesBeforeMidnight % 60;
                     if(closeMin==0)
                         closingHour = [NSString stringWithFormat:@"Closing: %i : %i0", closeHour,closeMin];
@@ -85,7 +87,7 @@
                     
                     
                     int openHour = self.openingMinutesBeforeMidnight / 60;
-                    NSLog(@"%i",self.openingMinutesBeforeMidnight);
+                    //NSLog(@"%i",self.openingMinutesBeforeMidnight);
                     int openMin = self.openingMinutesBeforeMidnight % 60;
                     if(openMin==0)
                         openingHour = [NSString stringWithFormat:@"Opening: %i : %i0", openHour,openMin];
@@ -96,8 +98,7 @@
                     
                     self.openingHoursLabel.text=openingHour;
                     self.hoursLabel.text=closingHour;
-                    
-                    [self.view setNeedsDisplay];
+                                        [self.view setNeedsDisplay];
                     
                     
                 }
@@ -126,12 +127,36 @@
     [super viewDidLoad];
     self.nameLabel.text=self.name;
     self.locationLabel.text=[NSString stringWithFormat:@"Location: %@", self.location];
-    
-    [self.view setNeedsDisplay];
+       [self.view setNeedsDisplay];
+    [self.favoriteButton addTarget:self action:@selector(favoriteButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+
+
     //[self.view setNeedsDisplay];
     // Do any additional setup after loading the view.
 }
 
+-(void)favoriteButtonPressed
+{
+    PFUser *user = [PFUser currentUser];
+    PFRelation *relation = [user relationForKey:@"favorites"];
+    [relation addObject: currentRestaurant];
+    /**
+    if(user[@"favorite"]!=nil)
+    {
+        [user addObject:currentRestaurant forKey:@"favorites"];
+       // NSLog(@"%@",user[@"favorites"]);
+    }
+    else
+    {
+        NSArray *array = @[currentRestaurant];
+        [user setObject:array forKey:@"favorites"];
+       // NSLog(@"%@",user[@"favorites"]);
+    }
+     **/
+   // NSLog(@"current res: %@",currentRestaurant);
+    [user saveInBackground];
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -523,7 +523,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="MAZ-fL-21a" kind="relationship" relationship="viewControllers" id="Bz7-o2-lgS"/>
-                        <segue destination="wS1-8g-d5x" kind="relationship" relationship="viewControllers" id="TQ1-sO-Hno"/>
+                        <segue destination="IEK-t1-xF7" kind="relationship" relationship="viewControllers" id="TQ1-sO-Hno"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PvZ-v2-Wlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -598,11 +598,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-lr-I6Q">
+                                <rect key="frame" x="130" y="403" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Favorite!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NSu-8L-gSR"/>
                     <connections>
+                        <outlet property="favoriteButton" destination="2ai-lr-I6Q" id="CVR-pJ-fnU"/>
                         <outlet property="hoursLabel" destination="mXj-a0-bIu" id="s1J-Jd-7lN"/>
                         <outlet property="locationLabel" destination="524-nv-x2V" id="pzH-1w-GJB"/>
                         <outlet property="nameLabel" destination="gqX-eK-d2o" id="OJm-JC-sfF"/>
@@ -613,22 +621,25 @@
             </objects>
             <point key="canvasLocation" x="1873" y="778"/>
         </scene>
-        <!--Table View Controller - Item-->
+        <!--Favorite Restaurant Table View Controller-->
         <scene sceneID="LIJ-LR-UJt">
             <objects>
-                <tableViewController id="wS1-8g-d5x" sceneMemberID="viewController">
+                <tableViewController id="wS1-8g-d5x" customClass="FavoriteRestaurantTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IDG-RS-Yaf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dGN-Kb-JNc">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favorite" id="dGN-Kb-JNc">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dGN-Kb-JNc" id="Yyt-H1-KXC">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hQC-yd-KGu" kind="push" identifier="favoriteRestaurantDetail" id="hZv-At-mdQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -636,9 +647,28 @@
                             <outlet property="delegate" destination="wS1-8g-d5x" id="p9Y-dQ-t2x"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="TOI-ah-U6T"/>
+                    <navigationItem key="navigationItem" id="h9q-7o-2aG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-8g-dEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2822" y="490"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="e8D-XG-spl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="IEK-t1-xF7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TOI-ah-U6T"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oJ9-Wq-3MW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wS1-8g-d5x" kind="relationship" relationship="rootViewController" id="EL5-nX-uzO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Khb-iX-j2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2296" y="490"/>
         </scene>
@@ -648,4 +678,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="hZv-At-mdQ"/>
+    </inferredMetricsTieBreakers>
 </document>

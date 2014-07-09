@@ -33,6 +33,7 @@
 		14109E08196C66B200F12AC5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E07196C66B200F12AC5 /* libsqlite3.dylib */; };
 		14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0A196C758E00F12AC5 /* RestaurantStore.m */; };
 		14109E0E196C9E4200F12AC5 /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */; };
+		14E16370196DE74E008282F1 /* FavoriteRestaurantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E1636F196DE74E008282F1 /* FavoriteRestaurantTableViewController.m */; };
 		3A7ADB69196D9CA600AA5B36 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */; };
 		3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */; };
 		3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC09196CA13600855253 /* AddTabBarController.m */; };
@@ -102,6 +103,8 @@
 		14109E0A196C758E00F12AC5 /* RestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantStore.m; sourceTree = "<group>"; };
 		14109E0C196C9E4200F12AC5 /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailViewController.h; sourceTree = "<group>"; };
 		14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailViewController.m; sourceTree = "<group>"; };
+		14E1636E196DE74E008282F1 /* FavoriteRestaurantTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteRestaurantTableViewController.h; sourceTree = "<group>"; };
+		14E1636F196DE74E008282F1 /* FavoriteRestaurantTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteRestaurantTableViewController.m; sourceTree = "<group>"; };
 		3A7ADB67196D9CA600AA5B36 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRestaurantViewController.h; sourceTree = "<group>"; };
@@ -252,7 +255,6 @@
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
 				3A7ADB67196D9CA600AA5B36 /* WelcomeViewController.h */,
 				3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */,
-				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
 				14109DF6196C640E00F12AC5 /* RestaurantsList */,
 				14109DF5196C63C800F12AC5 /* Restaurant */,
 				14109DD2196C5CE500F12AC5 /* Images.xcassets */,
@@ -305,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				14109E0C196C9E4200F12AC5 /* RestaurantDetailViewController.h */,
+				14E1636E196DE74E008282F1 /* FavoriteRestaurantTableViewController.h */,
+				14E1636F196DE74E008282F1 /* FavoriteRestaurantTableViewController.m */,
 				14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */,
 				14109DF0196C638600F12AC5 /* RestaurantsTableViewController.m */,
 				14109DEF196C638600F12AC5 /* RestaurantsTableViewController.h */,
@@ -409,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E16370196DE74E008282F1 /* FavoriteRestaurantTableViewController.m in Sources */,
 				14109DD1196C5CE500F12AC5 /* ViewController.m in Sources */,
 				8A8B08A1196C655200D7F2CB /* WhatsOpenController.m in Sources */,
 				3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */,

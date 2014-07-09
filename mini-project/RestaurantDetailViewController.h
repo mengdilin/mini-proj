@@ -19,5 +19,6 @@
 @property (nonatomic, copy) NSArray *hours;
 @property (nonatomic) int openingMinutesBeforeMidnight;
 @property (nonatomic) int closingMinutesBeforeMidnight;
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
 
 @end
