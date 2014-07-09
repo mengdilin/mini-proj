@@ -70,14 +70,10 @@
             </objects>
             <point key="canvasLocation" x="664" y="167"/>
         </scene>
-        <!--Whats Open Controller-->
+        <!--Whats Open Controller - What's Open Now-->
         <scene sceneID="K6G-M2-H94">
             <objects>
                 <tableViewController id="j7o-Qf-uoI" customClass="WhatsOpenController" sceneMemberID="viewController">
-        <!--Whats Open Table View Controller - What's Open Now-->
-        <scene sceneID="K6G-M2-H94">
-            <objects>
-                <tableViewController id="j7o-Qf-uoI" customClass="WhatsOpenTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="drS-03-eKI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
