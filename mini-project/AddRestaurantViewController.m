@@ -49,16 +49,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-<<<<<<< HEAD
-=======
--(void)viewWillDisappear:(BOOL)animated
-{
- //   [self.datePickerOpen setDate:date animated:TRUE];
->>>>>>> 287729bcc1a605297e56cc5bc0a3dc4ae3872e41
 
-
-<<<<<<< HEAD
-=======
 -(IBAction)endPressed:(id)sender
 {
     NSDate * now = [[NSDate alloc] init];
@@ -70,7 +61,7 @@
     NSDate * date = [cal dateFromComponents:comps];
  //   [self.datePicker setDate:date animated:TRUE];
 }
->>>>>>> 287729bcc1a605297e56cc5bc0a3dc4ae3872e41
+
 
 /*
 #pragma mark - Navigation

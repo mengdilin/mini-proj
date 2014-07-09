@@ -54,8 +54,8 @@ static PFObject *restaurant;
 -(void)viewWillDisappear:(BOOL)animated{
     PFObject *restaurant = [PFObject objectWithClassName:@"Restaurant"];
     restaurant[@"Name"] = @"Dennys";
-    restaurant[@"ClosingTimes"] = [NSArray arrayWithObjects: @82800, @82800, @82800, @79200,@79200,@79200,@79200, nil];
-    restaurant[@"OpeningTimes"] = [NSArray arrayWithObjects: @10800, @10800, @10800, @10800,@10800,@10800,@10800, nil];
+    restaurant[@"ClosingTimes"] = [NSArray arrayWithObjects: @1439, @1439, @1439, @1439,@1439,@1439,@1439, nil];
+    restaurant[@"OpeningTimes"] = [NSArray arrayWithObjects: @360, @360, @360, @360,@360,@360,@360, nil];
     
     [restaurant saveInBackground];
     
