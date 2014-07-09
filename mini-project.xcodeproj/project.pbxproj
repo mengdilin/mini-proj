@@ -250,12 +250,9 @@
 				3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */,
 				14109DCF196C5CE500F12AC5 /* ViewController.h */,
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
-<<<<<<< HEAD
 				3A7ADB67196D9CA600AA5B36 /* WelcomeViewController.h */,
 				3A7ADB68196D9CA600AA5B36 /* WelcomeViewController.m */,
 				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
-=======
->>>>>>> FETCH_HEAD
 				14109DF6196C640E00F12AC5 /* RestaurantsList */,
 				14109DF5196C63C800F12AC5 /* Restaurant */,
 				14109DD2196C5CE500F12AC5 /* Images.xcassets */,
