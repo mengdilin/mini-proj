@@ -36,6 +36,23 @@
 		8A8B08BB196C750000D7F2CB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8B08AE196C750000D7F2CB /* Social.framework */; };
 		8A8B08BC196C750000D7F2CB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8B08AF196C750000D7F2CB /* StoreKit.framework */; };
 		8A8B08BD196C750000D7F2CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8B08B0196C750000D7F2CB /* SystemConfiguration.framework */; };
+		14109DF1196C638600F12AC5 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DF0196C638600F12AC5 /* RestaurantsTableViewController.m */; };
+		14109DF4196C63C000F12AC5 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109DF3196C63C000F12AC5 /* Restaurant.m */; };
+		14109DF8196C666600F12AC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DF7196C666600F12AC5 /* SystemConfiguration.framework */; };
+		14109DFA196C666F00F12AC5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DF9196C666F00F12AC5 /* StoreKit.framework */; };
+		14109DFC196C667600F12AC5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DFB196C667600F12AC5 /* Social.framework */; };
+		14109DFE196C667D00F12AC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DFD196C667D00F12AC5 /* Security.framework */; };
+		14109E00196C668400F12AC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109DFF196C668400F12AC5 /* QuartzCore.framework */; };
+		14109E02196C669900F12AC5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E01196C669900F12AC5 /* Parse.framework */; };
+		14109E04196C66A200F12AC5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E03196C66A200F12AC5 /* MobileCoreServices.framework */; };
+		14109E06196C66A900F12AC5 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E05196C66A900F12AC5 /* libz.1.1.3.dylib */; };
+		14109E08196C66B200F12AC5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14109E07196C66B200F12AC5 /* libsqlite3.dylib */; };
+		14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0A196C758E00F12AC5 /* RestaurantStore.m */; };
+		14109E0E196C9E4200F12AC5 /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */; };
+		3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */; };
+		3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC09196CA13600855253 /* AddTabBarController.m */; };
+		3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */; };
+		3ACCDC0F196CA9AE00855253 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACCDC0E196CA9AE00855253 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +101,30 @@
 		8A8B08AE196C750000D7F2CB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8A8B08AF196C750000D7F2CB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8A8B08B0196C750000D7F2CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14109DEF196C638600F12AC5 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
+		14109DF0196C638600F12AC5 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		14109DF2196C63C000F12AC5 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		14109DF3196C63C000F12AC5 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		14109DF7196C666600F12AC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14109DF9196C666F00F12AC5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		14109DFB196C667600F12AC5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		14109DFD196C667D00F12AC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		14109DFF196C668400F12AC5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14109E01196C669900F12AC5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		14109E03196C66A200F12AC5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		14109E05196C66A900F12AC5 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		14109E07196C66B200F12AC5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		14109E09196C758E00F12AC5 /* RestaurantStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantStore.h; sourceTree = "<group>"; };
+		14109E0A196C758E00F12AC5 /* RestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantStore.m; sourceTree = "<group>"; };
+		14109E0C196C9E4200F12AC5 /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailViewController.h; sourceTree = "<group>"; };
+		14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailViewController.m; sourceTree = "<group>"; };
+		3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRestaurantViewController.h; sourceTree = "<group>"; };
+		3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRestaurantViewController.m; sourceTree = "<group>"; };
+		3ACCDC08196CA13600855253 /* AddTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTabBarController.h; sourceTree = "<group>"; };
+		3ACCDC09196CA13600855253 /* AddTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTabBarController.m; sourceTree = "<group>"; };
+		3ACCDC0B196CA3AA00855253 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		3ACCDC0E196CA9AE00855253 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8B08B1196C750000D7F2CB /* Accounts.framework in Frameworks */,
+            
+                8A8B08B1196C750000D7F2CB /* Accounts.framework in Frameworks */,
 				8A8B08B2196C750000D7F2CB /* AdSupport.framework in Frameworks */,
 				8A8B08B3196C750000D7F2CB /* AudioToolbox.framework in Frameworks */,
 				8A8B08B4196C750000D7F2CB /* CFNetwork.framework in Frameworks */,
@@ -107,6 +149,18 @@
 				14109DBD196C5CE500F12AC5 /* CoreGraphics.framework in Frameworks */,
 				14109DBF196C5CE500F12AC5 /* UIKit.framework in Frameworks */,
 				8A8B08A3196C744300D7F2CB /* Parse.framework in Frameworks */,
+				14109E08196C66B200F12AC5 /* libsqlite3.dylib in Frameworks */,
+				14109E06196C66A900F12AC5 /* libz.1.1.3.dylib in Frameworks */,
+				14109E04196C66A200F12AC5 /* MobileCoreServices.framework in Frameworks */,
+				14109E00196C668400F12AC5 /* QuartzCore.framework in Frameworks */,
+				14109DFE196C667D00F12AC5 /* Security.framework in Frameworks */,
+				14109DFC196C667600F12AC5 /* Social.framework in Frameworks */,
+				14109DFA196C666F00F12AC5 /* StoreKit.framework in Frameworks */,
+				14109DF8196C666600F12AC5 /* SystemConfiguration.framework in Frameworks */,
+				14109E02196C669900F12AC5 /* Parse.framework in Frameworks */,
+				14109DBD196C5CE500F12AC5 /* CoreGraphics.framework in Frameworks */,
+				14109DBF196C5CE500F12AC5 /* UIKit.framework in Frameworks */,
+				3ACCDC0F196CA9AE00855253 /* Parse.framework in Frameworks */,
 				14109DBB196C5CE500F12AC5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +181,7 @@
 		14109DAE196C5CE500F12AC5 = {
 			isa = PBXGroup;
 			children = (
+				3ACCDC0E196CA9AE00855253 /* Parse.framework */,
 				14109DC0196C5CE500F12AC5 /* mini-project */,
 				14109DDF196C5CE500F12AC5 /* mini-projectTests */,
 				14109DB9196C5CE500F12AC5 /* Frameworks */,
@@ -160,6 +215,15 @@
 				8A8B08AF196C750000D7F2CB /* StoreKit.framework */,
 				8A8B08B0196C750000D7F2CB /* SystemConfiguration.framework */,
 				8A8B08A2196C744300D7F2CB /* Parse.framework */,
+				14109E07196C66B200F12AC5 /* libsqlite3.dylib */,
+				14109E05196C66A900F12AC5 /* libz.1.1.3.dylib */,
+				14109E03196C66A200F12AC5 /* MobileCoreServices.framework */,
+				14109E01196C669900F12AC5 /* Parse.framework */,
+				14109DFF196C668400F12AC5 /* QuartzCore.framework */,
+				14109DFD196C667D00F12AC5 /* Security.framework */,
+				14109DFB196C667600F12AC5 /* Social.framework */,
+				14109DF9196C666F00F12AC5 /* StoreKit.framework */,
+				14109DF7196C666600F12AC5 /* SystemConfiguration.framework */,
 				14109DBA196C5CE500F12AC5 /* Foundation.framework */,
 				14109DBC196C5CE500F12AC5 /* CoreGraphics.framework */,
 				14109DBE196C5CE500F12AC5 /* UIKit.framework */,
@@ -176,8 +240,17 @@
 				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
 				8A8B089F196C655200D7F2CB /* WhatsOpenController.h */,
 				8A8B08A0196C655200D7F2CB /* WhatsOpenController.m */,
+				3ACCDC0B196CA3AA00855253 /* SubmitViewController.h */,
+				3ACCDC0C196CA3AA00855253 /* SubmitViewController.m */,
+				3ACCDC08196CA13600855253 /* AddTabBarController.h */,
+				3ACCDC09196CA13600855253 /* AddTabBarController.m */,
+				3ACCDC02196C64A600855253 /* AddRestaurantViewController.h */,
+				3ACCDC03196C64A600855253 /* AddRestaurantViewController.m */,
 				14109DCF196C5CE500F12AC5 /* ViewController.h */,
 				14109DD0196C5CE500F12AC5 /* ViewController.m */,
+				14109DCC196C5CE500F12AC5 /* Main.storyboard */,
+				14109DF6196C640E00F12AC5 /* RestaurantsList */,
+				14109DF5196C63C800F12AC5 /* Restaurant */,
 				14109DD2196C5CE500F12AC5 /* Images.xcassets */,
 				14109DC1196C5CE500F12AC5 /* Supporting Files */,
 			);
@@ -211,6 +284,28 @@
 				14109DE2196C5CE500F12AC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14109DF5196C63C800F12AC5 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				14109DF3196C63C000F12AC5 /* Restaurant.m */,
+				14109E09196C758E00F12AC5 /* RestaurantStore.h */,
+				14109E0A196C758E00F12AC5 /* RestaurantStore.m */,
+				14109DF2196C63C000F12AC5 /* Restaurant.h */,
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		14109DF6196C640E00F12AC5 /* RestaurantsList */ = {
+			isa = PBXGroup;
+			children = (
+				14109E0C196C9E4200F12AC5 /* RestaurantDetailViewController.h */,
+				14109E0D196C9E4200F12AC5 /* RestaurantDetailViewController.m */,
+				14109DF0196C638600F12AC5 /* RestaurantsTableViewController.m */,
+				14109DEF196C638600F12AC5 /* RestaurantsTableViewController.h */,
+			);
+			name = RestaurantsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,8 +407,15 @@
 			files = (
 				14109DD1196C5CE500F12AC5 /* ViewController.m in Sources */,
 				8A8B08A1196C655200D7F2CB /* WhatsOpenController.m in Sources */,
+				3ACCDC04196C64A600855253 /* AddRestaurantViewController.m in Sources */,
+				14109DF4196C63C000F12AC5 /* Restaurant.m in Sources */,
+				14109E0B196C758E00F12AC5 /* RestaurantStore.m in Sources */,
+				14109DF1196C638600F12AC5 /* RestaurantsTableViewController.m in Sources */,
 				14109DCB196C5CE500F12AC5 /* AppDelegate.m in Sources */,
+				14109E0E196C9E4200F12AC5 /* RestaurantDetailViewController.m in Sources */,
 				14109DC7196C5CE500F12AC5 /* main.m in Sources */,
+				3ACCDC0D196CA3AA00855253 /* SubmitViewController.m in Sources */,
+				3ACCDC0A196CA13600855253 /* AddTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +543,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/mengdilin/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mini-project/mini-project-Prefix.pch";
@@ -458,6 +561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/mengdilin/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mini-project/mini-project-Prefix.pch";
